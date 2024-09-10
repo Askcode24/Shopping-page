@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    overflow-x: auto;
+}
+
+.container {
+    letter-spacing: 2px;
+    width: 46%;
+    height: fit-content;
+    background-color: #ffffff;
+    box-shadow: 0 10px 40px 2px rgb(0 0 0 / 0.25);
+    margin-top: 10pc;
+    margin-left: 23pc;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Open Sans", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+header {
+    padding-block: 5px;
+    text-align: center;
+}
+
+/* Form & Input */
+.form-input {
+    width: 65%;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 2px solid rgb(0, 95, 139);
+    border-radius: 5px;
+    background-color: #e6f3f7;
+    outline: none;
+    font-family: "Open Sans", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.form-control {
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding-inline-start: 3pc;
+}
+
+/* .form-input-filter {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    outline: none;
+} */
+
+/* Button */
+
+.btn {
+    background-color: #70cae6d7;
+    color: #000;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    border-start-start-radius: 2px;
+    border-end-start-radius: 2px;
+    padding: 7px 25px;
+    padding-right: 19px;
+    height: 30px;
+    cursor: pointer;
+    font-family: "Open Sans", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.btn:hover {
+    background-color: hsl(194, 70%, 60%);
+}
+
+.btn-link {
+    font-size: 16px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn-clear {
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #f86c6c;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    width: 70%;
+    letter-spacing: 3px;
+    margin-block: 5px;
+}
+
+.btn-clear:hover {
+    background-color: #d8eeeb;
+    border-radius: 5px;
+}
+
+.text-red {
+    display: flex;
+    gap: 20px;
+    color: red
+}
+
+.text-green {
+    color: limegreen;
+}
+
+i {
+    font-size: 12px;
+}
+
+/* Items */
+ 
+.items {
+    margin-top: 20px;
+}
+
+.items li {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 9px;
+    padding: 10px 15px;
+    font-weight: 700;
+}
+
+@media (max-width: 500px), (max-width: 700px) {
+    .items li {
+        width: 80%;
+        text-align: center;
+    }
+
+    .form-input {
+        width: 60%;
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+} 
+
+@media (max-width: 700px) {
+    .items li {
+        width: 70%;
+        padding-left: 50px;
+    }
+    .form-input {
+        margin-left: 30px;
+    }
+}

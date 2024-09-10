@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shopping Page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="shop_style.css">
+    <title>Shopping List</title>
+</head>
+<body>
+    <div id="grocery-list" class="container">
+        <header>
+            <h1 id="app-title">Grocery Bud</h1>
+        </header>
+        <form id="item-form">
+            <div class="form-control">
+                <input type="text" class="form-input" id="item-input" name="item" placeholder="e.g. eggs">
+                <button id="submit-item" type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+
+        <ul id="items-list" class="items">
+            <li class="item">
+                Baccon
+                <button class="removed-item btn-link text-red">
+                    <i id="edit-icon" class="fa-solid fa-pen-to-square text-green"></i>
+                    <i class="fa-sharp fa-solid fa-trash text-red"></i>
+                </button>
+            </li>
+            <li class="item">
+                Milk
+                <button class="removed-item btn-link text-red">
+                    <i id="edit-icon" class="fa-solid fa-pen-to-square text-green"></i>
+                    <i class="fa-sharp fa-solid fa-trash text-red"></i>
+                </button>
+            </li>
+            <li class="item">
+                Egg
+                <button class="removed-item btn-link text-red">
+                    <i id="edit-icon" class="fa-solid fa-pen-to-square text-green"></i>
+                    <i class="fa-sharp fa-solid fa-trash text-red"></i>
+                </button>
+            </li>
+        </ul>
+
+        <button id="clear" class="btn-clear">Clear Items</button>
+    </div>
+
+    <script src="shopping_page.js"></script>
+</body>
+</html>
